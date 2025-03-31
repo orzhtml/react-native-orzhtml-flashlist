@@ -1,0 +1,44 @@
+{
+  "name": "react-native-orzhtml-flashlist",
+  "version": "1.0.0",
+  "description": "基于`@shopify/flash-list`封装的智能分页列表组件，支持下拉刷新、上拉加载、多状态提示等功能",
+  "main": "index.ts",
+  "scripts": {
+    "test": "flashlist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orzhtml/react-native-orzhtml-list.git"
+  },
+  "keywords": [
+    "flatlist",
+    "listview",
+    "list",
+    "view",
+    "flashlist"
+  ],
+  "author": "orzhtml",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/orzhtml/react-native-orzhtml-flashlist/issues"
+  },
+  "homepage": "https://github.com/orzhtml/react-native-orzhtml-flashlist#readme",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "jest": {
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "files": [
+    "index.tsx"
+  ]
+}
