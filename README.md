@@ -104,9 +104,13 @@ enum PageStatus {
 ## 注意事项
 
 1、必须通过pageStatus和refreshing控制状态
+
 2、首次加载需要手动设置refreshing={true}
+
 3、数据更新后自动保持滚动位置
+
 4、空数据状态会自动隐藏底部组件
+
 5、确保列表容器有明确的高度
 
 ## 完整示例
