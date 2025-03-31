@@ -12,9 +12,10 @@
 ## 安装
 ```bash
 yarn add @shopify/flash-list react-native-reanimated
+```
 
 ## 基本用法
-```
+```js
 import { OrzhtmlFlashList, PageStatus } from 'react-native-orzhtml-flashlist'
 
 function BasicExample() {
@@ -49,7 +50,7 @@ function BasicExample() {
 ...其他 | FlashList原生props | - | 支持所有FlashList属性
 
 ## PageStatus 枚举
-```
+```js
 enum PageStatus {
   firstLoad = 0, // 首次加载
   waiting = 1,   // 可加载更多
@@ -61,7 +62,7 @@ enum PageStatus {
 
 ## 高级用法
 ### 禁用分页功能
-```
+```js
 <OrzhtmlFlashList
   pagination={false}
   // 其他配置...
@@ -69,7 +70,7 @@ enum PageStatus {
 ```
 
 ### 禁用下拉刷新
-```
+```js
 <OrzhtmlFlashList
   isRefresh={false}
   // 其他配置...
@@ -77,7 +78,7 @@ enum PageStatus {
 ```
 
 ### 自定义加载状态
-```
+```js
 <OrzhtmlFlashList
   ListFooterComponent={
     <View style={{padding: 20}}>
@@ -90,7 +91,7 @@ enum PageStatus {
 ```
 
 ## 状态流程图
-graph TD
+```js
   A[首次加载] -->|成功| B{数据为空?}
   B -->|是| C[无数据状态]
   B -->|否| D[可加载更多]
@@ -98,6 +99,7 @@ graph TD
   E -->|成功| F{还有更多?}
   F -->|是| D
   F -->|否| G[全部加载完成]
+```
 
 ## 注意事项
 
@@ -108,7 +110,7 @@ graph TD
 5、确保列表容器有明确的高度
 
 ## 完整示例
-```
+```js
 import { OrzhtmlFlashList, PageStatus } from 'react-native-orzhtml-flashlist'
 
 function FullDemo() {
